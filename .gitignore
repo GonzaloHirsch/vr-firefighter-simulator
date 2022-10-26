@@ -61,9 +61,9 @@ sysinfo.txt
 
 .vscode/
 
-Packages/*
-ProjectSettings/
-ProjectSettings/*
+#Packages/*
+#ProjectSettings/
+#ProjectSettings/*
 
 Deploys
 Deploys/*
