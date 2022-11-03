@@ -1,3 +1,5 @@
+.vsconfig
+
 S Generated ###
 .DS_Store
 ._*
@@ -69,3 +71,5 @@ Deploys
 Deploys/*
 Recordings/
 lsystem.txt
+
+ProjectSettings/ProjectVersion.txt
