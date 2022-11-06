@@ -34,6 +34,7 @@ Transform:
   - {fileID: 2731741327763524189}
   - {fileID: 2731741328505503989}
   - {fileID: 2731741328333967396}
+  - {fileID: 2807121412312542129}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: -90, y: 0, z: 0}
@@ -24064,8 +24065,6 @@ ParticleSystemRenderer:
   m_MeshWeighting2: 1
   m_MeshWeighting3: 1
   m_MaskInteraction: 0
-<<<<<<< Updated upstream
-=======
 --- !u!1 &3492545338405313836
 GameObject:
   m_ObjectHideFlags: 0
@@ -24109,9 +24108,9 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 24300002, guid: ce0ae8c0f316877479b0cbdd4cb3baad, type: 2}
-  m_audioClip: {fileID: 8300000, guid: 6fbfff60683d2314a95bc0cb651affc7, type: 3}
+  m_audioClip: {fileID: 8300000, guid: ede2129a92e65a240964276006a507b0, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 0.001
+  m_Volume: 0.005
   m_Pitch: 1
   Loop: 1
   Mute: 0
@@ -24275,4 +24274,3 @@ MonoBehaviour:
   - 0
   applyHRTFToPathing: 0
   pathingMixLevel: 1
->>>>>>> Stashed changes
