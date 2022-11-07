@@ -5877,7 +5877,7 @@ GameObject:
   - component: {fileID: 208486866}
   - component: {fileID: 208486865}
   m_Layer: 0
-  m_Name: Voices (1)
+  m_Name: Crowd - Talking - 1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5988,9 +5988,9 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 24300002, guid: ce0ae8c0f316877479b0cbdd4cb3baad, type: 2}
-  m_audioClip: {fileID: 8300000, guid: e051df3e526099f4589fac329a2c59ca, type: 3}
+  m_audioClip: {fileID: 8300000, guid: e2c0cfb891cbf4e188fb6b2dddecc950, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 0.005
+  m_Volume: 0.015
   m_Pitch: 1
   Loop: 1
   Mute: 0
@@ -5999,7 +5999,7 @@ AudioSource:
   Priority: 128
   DopplerLevel: 1
   MinDistance: 1
-  MaxDistance: 500
+  MaxDistance: 150
   Pan2D: 0
   rolloffMode: 0
   BypassEffects: 0
@@ -10120,7 +10120,7 @@ GameObject:
   - component: {fileID: 389740529}
   - component: {fileID: 389740528}
   m_Layer: 0
-  m_Name: Voices (3)
+  m_Name: Crowd - Talking - 3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -10231,10 +10231,10 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 24300002, guid: ce0ae8c0f316877479b0cbdd4cb3baad, type: 2}
-  m_audioClip: {fileID: 8300000, guid: 2253f97a73d4428498a60673534d9dd4, type: 3}
+  m_audioClip: {fileID: 8300000, guid: e2c0cfb891cbf4e188fb6b2dddecc950, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 0.05
-  m_Pitch: 1.2
+  m_Volume: 0.015
+  m_Pitch: 1
   Loop: 1
   Mute: 0
   Spatialize: 1
@@ -10242,7 +10242,7 @@ AudioSource:
   Priority: 128
   DopplerLevel: 1
   MinDistance: 1
-  MaxDistance: 500
+  MaxDistance: 150
   Pan2D: 0
   rolloffMode: 0
   BypassEffects: 0
@@ -16715,7 +16715,7 @@ GameObject:
   - component: {fileID: 592733086}
   - component: {fileID: 592733085}
   m_Layer: 0
-  m_Name: Voices
+  m_Name: Crowd - Shouting
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -16826,9 +16826,9 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 24300002, guid: ce0ae8c0f316877479b0cbdd4cb3baad, type: 2}
-  m_audioClip: {fileID: 8300000, guid: e051df3e526099f4589fac329a2c59ca, type: 3}
+  m_audioClip: {fileID: 8300000, guid: 091cd3cf314e64c62a64a8887696c76e, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 0.01
+  m_Volume: 0.015
   m_Pitch: 1
   Loop: 1
   Mute: 0
@@ -16837,7 +16837,7 @@ AudioSource:
   Priority: 128
   DopplerLevel: 1
   MinDistance: 1
-  MaxDistance: 500
+  MaxDistance: 150
   Pan2D: 0
   rolloffMode: 0
   BypassEffects: 0
@@ -25746,7 +25746,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 915190501}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -24.98, y: 0, z: 4.55}
+  m_LocalPosition: {x: -25.4, y: -1.5, z: 4.55}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -34062,7 +34062,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1192801970}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -21.49006, y: -10.679958, z: -60.700874}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -48160,7 +48160,7 @@ GameObject:
   - component: {fileID: 1696544508}
   - component: {fileID: 1696544507}
   m_Layer: 0
-  m_Name: Sirens 1
+  m_Name: Sirens - 1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -48258,7 +48258,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 24300002, guid: ce0ae8c0f316877479b0cbdd4cb3baad, type: 2}
   m_audioClip: {fileID: 8300000, guid: c1cbb4c9ebc5c0a4aa76273cd7d0e9de, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 0.574
+  m_Volume: 0.75
   m_Pitch: 1
   Loop: 1
   Mute: 0
@@ -48266,7 +48266,7 @@ AudioSource:
   SpatializePostEffects: 1
   Priority: 100
   DopplerLevel: 1
-  MinDistance: 1
+  MinDistance: 7
   MaxDistance: 500
   Pan2D: 0
   rolloffMode: 0
@@ -48350,7 +48350,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1696544506}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -5.7, y: 13.179958, z: 24.8}
+  m_LocalPosition: {x: -23.4, y: 2, z: -45.2}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -51901,7 +51901,7 @@ GameObject:
   - component: {fileID: 1854226670}
   - component: {fileID: 1854226669}
   m_Layer: 0
-  m_Name: Voices (2)
+  m_Name: Crowd - Talking - 2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -52012,9 +52012,9 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 24300002, guid: ce0ae8c0f316877479b0cbdd4cb3baad, type: 2}
-  m_audioClip: {fileID: 8300000, guid: 2253f97a73d4428498a60673534d9dd4, type: 3}
+  m_audioClip: {fileID: 8300000, guid: d7e6295c2017f43e6a0f13b5be206986, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 0.05
+  m_Volume: 0.015
   m_Pitch: 1
   Loop: 1
   Mute: 0
@@ -52023,7 +52023,7 @@ AudioSource:
   Priority: 128
   DopplerLevel: 1
   MinDistance: 1
-  MaxDistance: 500
+  MaxDistance: 150
   Pan2D: 0
   rolloffMode: 0
   BypassEffects: 0
@@ -54036,7 +54036,7 @@ GameObject:
   - component: {fileID: 1915639394}
   - component: {fileID: 1915639393}
   m_Layer: 0
-  m_Name: Sirens 2
+  m_Name: Sirens - 2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -54050,7 +54050,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1915639391}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -24.3, y: 13.179958, z: 34.2}
+  m_LocalPosition: {x: 23.1, y: 2.18, z: 81.5}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -54147,9 +54147,9 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 24300002, guid: ce0ae8c0f316877479b0cbdd4cb3baad, type: 2}
-  m_audioClip: {fileID: 8300000, guid: c1cbb4c9ebc5c0a4aa76273cd7d0e9de, type: 3}
+  m_audioClip: {fileID: 8300000, guid: 6d62f028aacf1a147afcadffac33a3d6, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 0.574
+  m_Volume: 0.75
   m_Pitch: 1
   Loop: 1
   Mute: 0
@@ -54157,8 +54157,8 @@ AudioSource:
   SpatializePostEffects: 1
   Priority: 101
   DopplerLevel: 1
-  MinDistance: 1
-  MaxDistance: 500
+  MinDistance: 7
+  MaxDistance: 2049.0547
   Pan2D: 0
   rolloffMode: 0
   BypassEffects: 0
