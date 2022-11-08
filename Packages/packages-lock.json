@@ -10,6 +10,18 @@
       },
       "hash": "f14b4d14683bd379b1502f466b402d6fc2ad1cf7"
     },
+    "com.unity.2d.sprite": {
+      "version": "1.0.0",
+      "depth": 0,
+      "source": "builtin",
+      "dependencies": {}
+    },
+    "com.unity.2d.tilemap": {
+      "version": "1.0.0",
+      "depth": 0,
+      "source": "builtin",
+      "dependencies": {}
+    },
     "com.unity.collab-proxy": {
       "version": "1.17.2",
       "depth": 0,
@@ -95,8 +107,15 @@
       },
       "url": "https://packages.unity.com"
     },
+    "com.unity.progrids": {
+      "version": "3.0.3-preview.4",
+      "depth": 0,
+      "source": "registry",
+      "dependencies": {},
+      "url": "https://packages.unity.com"
+    },
     "com.unity.services.core": {
-      "version": "1.4.2",
+      "version": "1.4.3",
       "depth": 1,
       "source": "registry",
       "dependencies": {
@@ -184,7 +203,7 @@
       "url": "https://packages.unity.com"
     },
     "com.unity.xr.legacyinputhelpers": {
-      "version": "2.1.9",
+      "version": "2.1.10",
       "depth": 1,
       "source": "registry",
       "dependencies": {
