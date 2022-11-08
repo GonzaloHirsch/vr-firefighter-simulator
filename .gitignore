@@ -75,3 +75,4 @@ lsystem.txt
 ProjectSettings/ProjectVersion.txt
 
 mono_crash.**.blob
+mono_crash.**.json
