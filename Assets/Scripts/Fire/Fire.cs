@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class Fire : MonoBehaviour
+public class Fire : MonoBehaviour, IWaterInteractable
 {
     public bool isOn = false;
     public float timeToOn = 3f;
@@ -93,5 +93,9 @@ public class Fire : MonoBehaviour
 
     public void TurnOff() {
         this.UpdateFireState(true);
+    }
+
+    public void WaterHit(Vector3 normal) {
+        // TODO: IMPLEMENT
     }
 }

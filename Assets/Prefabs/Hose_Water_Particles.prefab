@@ -11,8 +11,9 @@ GameObject:
   - component: {fileID: 8833185238291264707}
   - component: {fileID: 8833185238291264705}
   - component: {fileID: 8833185238291264704}
+  - component: {fileID: 2018328407756653418}
   m_Layer: 0
-  m_Name: Hose_Water
+  m_Name: Hose_Water_Particles
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -29,8 +30,7 @@ Transform:
   m_LocalPosition: {x: -0, y: 0.218, z: -0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 3914698842590021487}
+  m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: -90, y: 0, z: 0}
@@ -868,7 +868,7 @@ ParticleSystem:
     rateOverTime:
       serializedVersion: 2
       minMaxState: 0
-      scalar: 220
+      scalar: 10
       minScalar: 10
       maxCurve:
         serializedVersion: 2
@@ -3613,14 +3613,14 @@ ParticleSystem:
         m_NumAlphaKeys: 2
     range: {x: 0, y: 1}
   CollisionModule:
-    enabled: 0
+    enabled: 1
     serializedVersion: 4
-    type: 0
+    type: 1
     collisionMode: 0
     colliderForce: 0
     multiplyColliderForceByParticleSize: 0
     multiplyColliderForceByParticleSpeed: 0
-    multiplyColliderForceByCollisionAngle: 1
+    multiplyColliderForceByCollisionAngle: 0
     m_Planes: []
     m_Dampen:
       serializedVersion: 2
@@ -3678,7 +3678,7 @@ ParticleSystem:
     m_Bounce:
       serializedVersion: 2
       minMaxState: 0
-      scalar: 1
+      scalar: 0
       minScalar: 1
       maxCurve:
         serializedVersion: 2
@@ -3788,9 +3788,9 @@ ParticleSystem:
       serializedVersion: 2
       m_Bits: 4294967295
     maxCollisionShapes: 256
-    quality: 0
+    quality: 1
     voxelSize: 0.5
-    collisionMessages: 0
+    collisionMessages: 1
     collidesWithDynamic: 1
     interiorCollisions: 0
   TriggerModule:
@@ -4782,7 +4782,7 @@ ParticleSystemRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 100
+  m_SortingOrder: 0
   m_RenderMode: 0
   m_MeshDistribution: 0
   m_SortMode: 0
@@ -4813,65 +4813,16 @@ ParticleSystemRenderer:
   m_MeshWeighting2: 1
   m_MeshWeighting3: 1
   m_MaskInteraction: 0
---- !u!1001 &5532121251208049580
-PrefabInstance:
+--- !u!114 &2018328407756653418
+MonoBehaviour:
   m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 8833185238291264707}
-    m_Modifications:
-    - target: {fileID: 8833185238291264706, guid: 81e4ee063396948958f8d05e8913797a, type: 3}
-      propertyPath: m_Name
-      value: Hose_Water_Particles
-      objectReference: {fileID: 0}
-    - target: {fileID: 8833185238291264707, guid: 81e4ee063396948958f8d05e8913797a, type: 3}
-      propertyPath: m_RootOrder
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8833185238291264707, guid: 81e4ee063396948958f8d05e8913797a, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8833185238291264707, guid: 81e4ee063396948958f8d05e8913797a, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0.218
-      objectReference: {fileID: 0}
-    - target: {fileID: 8833185238291264707, guid: 81e4ee063396948958f8d05e8913797a, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0.46
-      objectReference: {fileID: 0}
-    - target: {fileID: 8833185238291264707, guid: 81e4ee063396948958f8d05e8913797a, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 8833185238291264707, guid: 81e4ee063396948958f8d05e8913797a, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8833185238291264707, guid: 81e4ee063396948958f8d05e8913797a, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8833185238291264707, guid: 81e4ee063396948958f8d05e8913797a, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8833185238291264707, guid: 81e4ee063396948958f8d05e8913797a, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8833185238291264707, guid: 81e4ee063396948958f8d05e8913797a, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8833185238291264707, guid: 81e4ee063396948958f8d05e8913797a, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 81e4ee063396948958f8d05e8913797a, type: 3}
---- !u!4 &3914698842590021487 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 8833185238291264707, guid: 81e4ee063396948958f8d05e8913797a, type: 3}
-  m_PrefabInstance: {fileID: 5532121251208049580}
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8833185238291264706}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 24972f946023444118b2597e5f5ddd7f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  splashPrefab: {fileID: 1422571813400418504, guid: 5f22b4d63c11a7342a28e29902b76b35, type: 3}
