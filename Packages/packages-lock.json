@@ -132,7 +132,7 @@
       "url": "https://packages.unity.com"
     },
     "com.unity.services.core": {
-      "version": "1.4.2",
+      "version": "1.4.3",
       "depth": 1,
       "source": "registry",
       "dependencies": {
@@ -220,7 +220,7 @@
       "url": "https://packages.unity.com"
     },
     "com.unity.xr.legacyinputhelpers": {
-      "version": "2.1.9",
+      "version": "2.1.10",
       "depth": 1,
       "source": "registry",
       "dependencies": {
