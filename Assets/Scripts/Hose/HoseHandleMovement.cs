@@ -20,6 +20,7 @@ public class HoseHandleMovement : MonoBehaviour
         this.step = this.rotationSpeed * Time.deltaTime;
         this.onRotationQuat = Quaternion.Euler(this.onRotation); 
         this.offRotationQuat = Quaternion.Euler(this.offRotation); 
+        this.transform.localRotation = this.offRotationQuat;
     }
 
     void Update() 
@@ -27,6 +28,10 @@ public class HoseHandleMovement : MonoBehaviour
         if (isTurning) {
             this.MoveHoseHandle();
         }
+    }
+
+    public bool getIsTurning() {
+        return this.isTurning;
     }
 
     public void ActivateHandleMovement(bool turningOn) 

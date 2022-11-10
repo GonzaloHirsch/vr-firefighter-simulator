@@ -26456,6 +26456,11 @@ Transform:
   m_Father: {fileID: 385933584}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!198 &921683140 stripped
+ParticleSystem:
+  m_CorrespondingSourceObject: {fileID: 8833185238291264705, guid: 5b2bab8b6e821334f83086c713df7bd5, type: 3}
+  m_PrefabInstance: {fileID: 8833185239635736310}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &925936162
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -56143,7 +56148,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ec977d61dc6bcaa4b851caa19dbd2ab0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hoseHandle: {fileID: 0}
+  hoseHandle: {fileID: 1917998009}
+  hoseWaterPs: {fileID: 921683140}
+  waterDelayTime: 0.4
 --- !u!1001 &1922875369
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -62529,6 +62536,14 @@ PrefabInstance:
     - target: {fileID: 8833185238291264706, guid: 5b2bab8b6e821334f83086c713df7bd5, type: 3}
       propertyPath: m_Name
       value: Hose_Water
+      objectReference: {fileID: 0}
+    - target: {fileID: 8833185238291264706, guid: 5b2bab8b6e821334f83086c713df7bd5, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8833185238291264706, guid: 5b2bab8b6e821334f83086c713df7bd5, type: 3}
+      propertyPath: m_TagString
+      value: Water
       objectReference: {fileID: 0}
     - target: {fileID: 8833185238291264707, guid: 5b2bab8b6e821334f83086c713df7bd5, type: 3}
       propertyPath: m_RootOrder
