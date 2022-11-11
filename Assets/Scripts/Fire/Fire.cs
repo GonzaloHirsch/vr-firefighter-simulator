@@ -1,14 +1,15 @@
+using System.Collections.Generic;
 using UnityEngine;
 
 public class Fire : MonoBehaviour, IWaterInteractable
 {
+    [Header("Debug")]
+    public bool debug = false;
+    [Header("State")]
     public bool isOn = false;
+    public float timeToOnMin = 3f;
+    public float timeToOnMax = 3f;
     public float timeToOn = 3f;
-    public Fire[] neighbors;
-    public int onNeighborsThreshold = 2;
-
-    private ParticleSystem pSystem;
-    private AudioSource aSource;
     [SerializeField]
     private int onNeighbors = 0;
     [SerializeField]
@@ -16,14 +17,23 @@ public class Fire : MonoBehaviour, IWaterInteractable
     [SerializeField]
     private bool shouldTurnOn = false;
 
+    [Header("Neighbors")]
+    // This list shouldn't be initialized in the code
+    // We can leave it like this, in case the programmer decides to manually input some of them
+    public List<Fire> neighbors;
+    public int onNeighborsThreshold = 2;
+    public float maxNeighborDistance = 3f;
+
+    [Header("Particle System")]
+    public GameObject mainEffectGo;
+    private ParticleSystem pSystem;
+    private AudioSource aSource;
+
     void Awake()
     {
-        this.pSystem = this.GetComponent<ParticleSystem>();
-        this.aSource = this.GetComponentInChildren<AudioSource>();
-        this.UpdateFireState(false);
-        // Set initial count of on neighbors
-        foreach (Fire fire in this.neighbors) if (fire.isOn) this.onNeighbors++;
-        this.CheckNeighborState();
+        this.pSystem = this.mainEffectGo.GetComponent<ParticleSystem>();
+        this.aSource = this.mainEffectGo.GetComponentInChildren<AudioSource>();
+        this.timeToOn = Random.Range(this.timeToOnMin, this.timeToOnMax);
     }
 
     void Update()
@@ -47,6 +57,70 @@ public class Fire : MonoBehaviour, IWaterInteractable
         // Update the count
         if (fireOn) this.onNeighbors++;
         else this.onNeighbors--;
+        this.CheckNeighborState();
+    }
+
+    /* ------------------------------------------------------------------------------ */
+    /* STATE */
+    /* ------------------------------------------------------------------------------ */
+
+    public void UpdateFireState(bool notify)
+    {
+        if (this.isOn)
+        {
+            this.pSystem.Play();
+            this.aSource.Play();
+        }
+        else
+        {
+            this.pSystem.Stop();
+            this.aSource.Stop();
+        }
+        if (notify)
+        {
+            this.NotifyAllNeighbors();
+            FireController.Instance.FireChanged(this.isOn ? 1 : -1);
+        }
+    }
+
+    public void TurnOff()
+    {
+        this.UpdateFireState(true);
+    }
+
+    public void WaterHit(Vector3 normal)
+    {
+        // TODO: IMPLEMENT
+    }
+
+    public void SetIsOn(bool _isOn)
+    {
+        this.isOn = _isOn;
+        this.UpdateFireState(false);
+    }
+
+    /* ------------------------------------------------------------------------------ */
+    /* NEIGHBORS */
+    /* ------------------------------------------------------------------------------ */
+
+    public void FindNeighbors(Fire[] allFires, int fireId)
+    {
+        // Count how many of the neighbors are on
+        this.onNeighbors = 0;
+        // Find all the neighbors within the given distance
+        for (int i = 0; i < allFires.Length; i++)
+        {
+            // If neighbor is within distance, add it
+            if (i != fireId && Vector3.Distance(this.gameObject.transform.position, allFires[i].gameObject.transform.position) < this.maxNeighborDistance)
+            {
+                neighbors.Add(allFires[i]);
+                if (allFires[i].isOn)
+                {
+                    this.onNeighbors++;
+                }
+            }
+        }
+        // Check on the neighbor state
         this.CheckNeighborState();
     }
 
@@ -76,26 +150,17 @@ public class Fire : MonoBehaviour, IWaterInteractable
         foreach (Fire fire in this.neighbors) fire.NotifyNeighborState(this.isOn);
     }
 
-    public void UpdateFireState(bool notify)
+    /* ------------------------------------------------------------------------------ */
+    /* DEBUG */
+    /* ------------------------------------------------------------------------------ */
+
+    void OnDrawGizmosSelected()
     {
-        if (this.isOn)
+        if (debug)
         {
-            this.pSystem.Play();
-            this.aSource.Play();
-            if (notify) this.NotifyAllNeighbors();
+            // Display the explosion radius when selected
+            Gizmos.color = Color.red;
+            Gizmos.DrawWireSphere(this.transform.position, this.maxNeighborDistance);
         }
-        else
-        {
-            this.pSystem.Stop();
-            this.aSource.Stop();
-        }
-    }
-
-    public void TurnOff() {
-        this.UpdateFireState(true);
-    }
-
-    public void WaterHit(Vector3 normal) {
-        // TODO: IMPLEMENT
     }
 }
