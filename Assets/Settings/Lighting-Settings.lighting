@@ -16,10 +16,10 @@ LightingSettings:
   m_AlbedoBoost: 1
   m_IndirectOutputScale: 1
   m_UsingShadowmask: 1
-  m_BakeBackend: 1
-  m_LightmapMaxSize: 1024
-  m_BakeResolution: 4
-  m_Padding: 2
+  m_BakeBackend: 2
+  m_LightmapMaxSize: 2048
+  m_BakeResolution: 7
+  m_Padding: 5
   m_LightmapCompression: 3
   m_AO: 0
   m_AOMaxDistance: 1
@@ -38,9 +38,9 @@ LightingSettings:
   m_FinalGather: 0
   m_FinalGatherRayCount: 256
   m_FinalGatherFiltering: 1
-  m_PVRCulling: 1
+  m_PVRCulling: 0
   m_PVRSampling: 1
-  m_PVRDirectSampleCount: 64
+  m_PVRDirectSampleCount: 2048
   m_PVRSampleCount: 128
   m_PVREnvironmentSampleCount: 256
   m_PVREnvironmentReferencePointCount: 2048
