@@ -4802,7 +4802,6 @@ GameObject:
   - component: {fileID: 484245611}
   - component: {fileID: 484245614}
   - component: {fileID: 484245613}
-  - component: {fileID: 484245612}
   m_Layer: 0
   m_Name: Calendar
   m_TagString: Untagged
@@ -4825,19 +4824,6 @@ Transform:
   m_Father: {fileID: 411714417}
   m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!65 &484245612
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 484245610}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!23 &484245613
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -6326,7 +6312,6 @@ GameObject:
   - component: {fileID: 635419905}
   - component: {fileID: 635419908}
   - component: {fileID: 635419907}
-  - component: {fileID: 635419906}
   m_Layer: 0
   m_Name: Frame
   m_TagString: Untagged
@@ -6349,19 +6334,6 @@ Transform:
   m_Father: {fileID: 1714599288}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!65 &635419906
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 635419904}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!23 &635419907
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -9347,7 +9319,6 @@ GameObject:
   - component: {fileID: 814587449}
   - component: {fileID: 814587452}
   - component: {fileID: 814587451}
-  - component: {fileID: 814587450}
   m_Layer: 0
   m_Name: Map
   m_TagString: Untagged
@@ -9370,19 +9341,6 @@ Transform:
   m_Father: {fileID: 1714599288}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!65 &814587450
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 814587448}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!23 &814587451
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -11974,7 +11932,6 @@ GameObject:
   - component: {fileID: 1034403120}
   - component: {fileID: 1034403123}
   - component: {fileID: 1034403122}
-  - component: {fileID: 1034403121}
   m_Layer: 0
   m_Name: Wall
   m_TagString: Untagged
@@ -11997,19 +11954,6 @@ Transform:
   m_Father: {fileID: 411714417}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 90}
---- !u!65 &1034403121
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1034403119}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!23 &1034403122
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -15729,8 +15673,6 @@ GameObject:
   - component: {fileID: 1353744621}
   - component: {fileID: 1353744624}
   - component: {fileID: 1353744623}
-  - component: {fileID: 1353744625}
-  - component: {fileID: 1353744626}
   m_Layer: 0
   m_Name: Road
   m_TagString: Untagged
@@ -15803,32 +15745,6 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1353744620}
   m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
---- !u!65 &1353744625
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1353744620}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 10, y: 2.220446e-16, z: 10}
-  m_Center: {x: 0, y: 0, z: 0}
---- !u!65 &1353744626
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1353744620}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 10, y: 2.220446e-16, z: 10}
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1001 &1358688619
 PrefabInstance:
   m_ObjectHideFlags: 0
