@@ -1,15 +1,38 @@
 using UnityEngine;
+using System.Collections;
 
 public class FireAlarm : MonoBehaviour {
-   public GameObject instructionText;
+    public GameObject instructionText;
+    public FadeController fadeController;
+    private AudioSource audioSource;
 
-   public void OnPointerClick() {
-      SceneController.GoToGameScene();
-   }
-   public void OnPointerEnter() {
-      this.instructionText.SetActive(true);
-   }
-   public void OnPointerExit() {
-      this.instructionText.SetActive(false);
-   }
+    public void Start()
+    {
+        this.audioSource = this.GetComponent<AudioSource>();
+    }
+
+    public void OnPointerClick() {
+        StartCoroutine(OnPointerClickCoroutine());
+    }
+
+    IEnumerator OnPointerClickCoroutine()
+    {
+        this.audioSource.Play();
+        yield return new WaitForSeconds(0.75f);
+        fadeController.FadeOut();
+        for (int i = 0; i < 6; i++)
+        {
+            this.audioSource.volume = this.audioSource.volume * 0.7f;
+            yield return new WaitForSeconds(0.25f);
+        }
+        SceneController.GoToGameScene();
+    }
+
+    public void OnPointerEnter() {
+        this.instructionText.SetActive(true);
+    }
+
+    public void OnPointerExit() {
+        this.instructionText.SetActive(false);
+    }
 }
