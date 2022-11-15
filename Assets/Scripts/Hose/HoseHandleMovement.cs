@@ -49,8 +49,6 @@ public class HoseHandleMovement : MonoBehaviour
             this.step
         );
 
-        Debug.Log(Quaternion.Angle(transform.localRotation, this.towardsRotation));
-
         // When the turning has finalized, set the flag to false to avoid movement
         if (Quaternion.Angle(transform.localRotation, this.towardsRotation) == 0) {
             this.isTurning = false;
