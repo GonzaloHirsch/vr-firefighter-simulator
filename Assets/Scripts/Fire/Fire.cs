@@ -1,5 +1,6 @@
 using System.Collections.Generic;
 using UnityEngine;
+using System.Collections;
 
 public class Fire : MonoBehaviour, IWaterInteractable
 {
@@ -163,4 +164,45 @@ public class Fire : MonoBehaviour, IWaterInteractable
             Gizmos.DrawWireSphere(this.transform.position, this.maxNeighborDistance);
         }
     }
+
+    private IEnumerator TurnOffSprite()
+    {
+        Component[] particleSystems = GetComponentsInChildren(typeof(ParticleSystem));
+        for (int i = 0; i < 10; i++)
+        {
+            for(int s=0; s < particleSystems.Length; s++)
+            {
+                ParticleSystem system = (ParticleSystem)particleSystems[s];
+                ParticleSystem.MainModule main = system.main;
+                main.maxParticles = system.main.maxParticles / 2;
+                yield return new WaitForSeconds(0.01f);
+            }
+        }
+        this.pSystem.Stop();
+        for (int s = 0; s < particleSystems.Length; s++)
+        {
+            ParticleSystem system = (ParticleSystem)particleSystems[s];
+            system.Stop();
+        }
+    }
+
+    private IEnumerator TurnOnSprite()
+    {
+        Component[] particleSystems = GetComponentsInChildren(typeof(ParticleSystem));
+        for (int s = 0; s < particleSystems.Length; s++)
+        {
+            ParticleSystem system = (ParticleSystem)particleSystems[s];
+            ParticleSystem.MainModule main = system.main;
+            main.maxParticles = 1000;
+        }
+        this.pSystem.Play();
+        for (int s = 0; s < particleSystems.Length; s++)
+        {
+            ParticleSystem system = (ParticleSystem)particleSystems[s];
+            system.Play();
+        }
+        yield return new WaitForSeconds(0.01f);
+    }
+
+
 }
