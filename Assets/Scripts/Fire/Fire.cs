@@ -6,17 +6,26 @@ public class Fire : MonoBehaviour, IWaterInteractable
 {
     [Header("Debug")]
     public bool debug = false;
+
     [Header("State")]
     public bool isOn = false;
     public float timeToOnMin = 3f;
     public float timeToOnMax = 3f;
-    public float timeToOn = 3f;
+    public float timeToOn;
+
     [SerializeField]
     private int onNeighbors = 0;
     [SerializeField]
     private float timeToOnDelta = 0f;
     [SerializeField]
     private bool shouldTurnOn = false;
+
+    [Header("Fire Turning Off")]
+    private bool isTurningOff = false;
+    public float maxHitInterval = 2f;
+    public float currentHitInterval = 0f;
+    public float totalHitTime = 10f;
+    public float currentHitTime = 0f;
 
     [Header("Neighbors")]
     // This list shouldn't be initialized in the code
@@ -39,6 +48,7 @@ public class Fire : MonoBehaviour, IWaterInteractable
 
     void Update()
     {
+        // Handle turning on
         if (this.shouldTurnOn)
         {
             this.timeToOnDelta += Time.deltaTime;
@@ -48,6 +58,27 @@ public class Fire : MonoBehaviour, IWaterInteractable
                 this.isOn = true;
                 this.shouldTurnOn = false;
                 this.timeToOnDelta = 0f;
+                this.isTurningOff = false;
+                this.currentHitTime = 0f;
+                this.UpdateFireState(true);
+            }
+        }
+        // Handle turning off
+        if (this.isTurningOff) {
+            // Add to the timers
+            this.currentHitTime += Time.deltaTime;
+            this.currentHitInterval += Time.deltaTime;
+            // If the current interval timer is larger than the limit, it stops turning off
+            if (this.currentHitInterval >= this.maxHitInterval) {
+                this.isTurningOff = false;
+                this.currentHitTime = 0f;
+            } else if (this.currentHitTime >= this.totalHitTime) {
+                // Fire turns off
+                this.isOn = false;
+                this.shouldTurnOn = false;
+                this.timeToOnDelta = 0f;
+                this.isTurningOff = false;
+                this.currentHitTime = 0f;
                 this.UpdateFireState(true);
             }
         }
@@ -91,7 +122,9 @@ public class Fire : MonoBehaviour, IWaterInteractable
 
     public void WaterHit(Vector3 normal)
     {
-        // TODO: IMPLEMENT
+        // Reset timer when hit
+        this.isTurningOff = true;
+        this.currentHitInterval = 0f;
     }
 
     public void SetIsOn(bool _isOn)

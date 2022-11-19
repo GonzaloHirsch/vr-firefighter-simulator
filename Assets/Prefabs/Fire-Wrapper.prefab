@@ -61,12 +61,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   debug: 0
   isOn: 0
-  timeToOnMin: 10
-  timeToOnMax: 20
+  timeToOnMin: 60
+  timeToOnMax: 90
   timeToOn: 3
   onNeighbors: 0
   timeToOnDelta: 0
   shouldTurnOn: 0
+  maxHitInterval: 2
+  currentHitInterval: 0
+  totalHitTime: 5
+  currentHitTime: 0
   neighbors: []
   onNeighborsThreshold: 2
   maxNeighborDistance: 4
