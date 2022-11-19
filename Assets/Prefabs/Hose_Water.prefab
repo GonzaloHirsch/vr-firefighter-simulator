@@ -4820,6 +4820,18 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 8833185238291264707}
     m_Modifications:
+    - target: {fileID: 8833185238291264704, guid: 81e4ee063396948958f8d05e8913797a, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8833185238291264704, guid: 81e4ee063396948958f8d05e8913797a, type: 3}
+      propertyPath: m_RenderMode
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 8833185238291264704, guid: 81e4ee063396948958f8d05e8913797a, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 0}
     - target: {fileID: 8833185238291264706, guid: 81e4ee063396948958f8d05e8913797a, type: 3}
       propertyPath: m_Name
       value: Hose_Water_Particles

@@ -1,6 +1,4 @@
-using System.Collections;
-using System.Collections.Generic;
-using System.Linq;   
+using System.Linq;
 using UnityEngine;
 
 public class FireController : Framework.MonoBehaviorSingleton<FireController>
@@ -34,6 +32,10 @@ public class FireController : Framework.MonoBehaviorSingleton<FireController>
     public void FireChanged(int delta) {
         this.totalLitFires += delta;
         this.NotifyAllFireDependants();
+        // GAME OVER SITUATION
+        if (this.totalLitFires == 0) {
+            Debug.Log("GAME OVER");
+        }
     }
 
     void NotifyAllFireDependants()
