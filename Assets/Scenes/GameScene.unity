@@ -1291,6 +1291,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2592690533154406537, guid: 439ba83f7bfb64cc3a26229ca05aed3f, type: 3}
+      propertyPath: debug
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2592690533154406537, guid: 439ba83f7bfb64cc3a26229ca05aed3f, type: 3}
+      propertyPath: maxNeighborDistance
+      value: 3.5
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 439ba83f7bfb64cc3a26229ca05aed3f, type: 3}
 --- !u!4 &52425398 stripped
@@ -1422,6 +1430,14 @@ PrefabInstance:
     - target: {fileID: 2211755474782925893, guid: 439ba83f7bfb64cc3a26229ca05aed3f, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2592690533154406537, guid: 439ba83f7bfb64cc3a26229ca05aed3f, type: 3}
+      propertyPath: debug
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2592690533154406537, guid: 439ba83f7bfb64cc3a26229ca05aed3f, type: 3}
+      propertyPath: maxNeighborDistance
+      value: 3.5
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 439ba83f7bfb64cc3a26229ca05aed3f, type: 3}
@@ -1903,6 +1919,14 @@ PrefabInstance:
     - target: {fileID: 2211755474782925893, guid: 439ba83f7bfb64cc3a26229ca05aed3f, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2592690533154406537, guid: 439ba83f7bfb64cc3a26229ca05aed3f, type: 3}
+      propertyPath: debug
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2592690533154406537, guid: 439ba83f7bfb64cc3a26229ca05aed3f, type: 3}
+      propertyPath: maxNeighborDistance
+      value: 3.5
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 439ba83f7bfb64cc3a26229ca05aed3f, type: 3}
@@ -3559,6 +3583,14 @@ PrefabInstance:
     - target: {fileID: 2211755474782925893, guid: 439ba83f7bfb64cc3a26229ca05aed3f, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2592690533154406537, guid: 439ba83f7bfb64cc3a26229ca05aed3f, type: 3}
+      propertyPath: debug
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2592690533154406537, guid: 439ba83f7bfb64cc3a26229ca05aed3f, type: 3}
+      propertyPath: maxNeighborDistance
+      value: 3.5
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 439ba83f7bfb64cc3a26229ca05aed3f, type: 3}
@@ -6000,8 +6032,12 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2592690533154406537, guid: 439ba83f7bfb64cc3a26229ca05aed3f, type: 3}
+      propertyPath: debug
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2592690533154406537, guid: 439ba83f7bfb64cc3a26229ca05aed3f, type: 3}
       propertyPath: maxNeighborDistance
-      value: 4.5
+      value: 3.5
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 439ba83f7bfb64cc3a26229ca05aed3f, type: 3}
@@ -6583,6 +6619,14 @@ PrefabInstance:
     - target: {fileID: 2211755474782925893, guid: 439ba83f7bfb64cc3a26229ca05aed3f, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2592690533154406537, guid: 439ba83f7bfb64cc3a26229ca05aed3f, type: 3}
+      propertyPath: debug
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2592690533154406537, guid: 439ba83f7bfb64cc3a26229ca05aed3f, type: 3}
+      propertyPath: maxNeighborDistance
+      value: 3.5
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 439ba83f7bfb64cc3a26229ca05aed3f, type: 3}
@@ -7322,6 +7366,14 @@ PrefabInstance:
     - target: {fileID: 2211755474782925893, guid: 439ba83f7bfb64cc3a26229ca05aed3f, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2592690533154406537, guid: 439ba83f7bfb64cc3a26229ca05aed3f, type: 3}
+      propertyPath: debug
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2592690533154406537, guid: 439ba83f7bfb64cc3a26229ca05aed3f, type: 3}
+      propertyPath: maxNeighborDistance
+      value: 3.5
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 439ba83f7bfb64cc3a26229ca05aed3f, type: 3}
@@ -8912,6 +8964,14 @@ PrefabInstance:
     - target: {fileID: 2211755474782925893, guid: 439ba83f7bfb64cc3a26229ca05aed3f, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2592690533154406537, guid: 439ba83f7bfb64cc3a26229ca05aed3f, type: 3}
+      propertyPath: debug
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2592690533154406537, guid: 439ba83f7bfb64cc3a26229ca05aed3f, type: 3}
+      propertyPath: maxNeighborDistance
+      value: 3.5
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 439ba83f7bfb64cc3a26229ca05aed3f, type: 3}
@@ -13058,6 +13118,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2592690533154406537, guid: 439ba83f7bfb64cc3a26229ca05aed3f, type: 3}
+      propertyPath: debug
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2592690533154406537, guid: 439ba83f7bfb64cc3a26229ca05aed3f, type: 3}
+      propertyPath: maxNeighborDistance
+      value: 3.5
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 439ba83f7bfb64cc3a26229ca05aed3f, type: 3}
 --- !u!4 &461528149 stripped
@@ -15356,6 +15424,14 @@ PrefabInstance:
     - target: {fileID: 2211755474782925893, guid: 439ba83f7bfb64cc3a26229ca05aed3f, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2592690533154406537, guid: 439ba83f7bfb64cc3a26229ca05aed3f, type: 3}
+      propertyPath: debug
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2592690533154406537, guid: 439ba83f7bfb64cc3a26229ca05aed3f, type: 3}
+      propertyPath: maxNeighborDistance
+      value: 3.5
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 439ba83f7bfb64cc3a26229ca05aed3f, type: 3}
@@ -17980,8 +18056,12 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2592690533154406537, guid: 439ba83f7bfb64cc3a26229ca05aed3f, type: 3}
+      propertyPath: debug
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2592690533154406537, guid: 439ba83f7bfb64cc3a26229ca05aed3f, type: 3}
       propertyPath: maxNeighborDistance
-      value: 4.5
+      value: 3.5
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 439ba83f7bfb64cc3a26229ca05aed3f, type: 3}
@@ -20888,7 +20968,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2592690533154406537, guid: 439ba83f7bfb64cc3a26229ca05aed3f, type: 3}
       propertyPath: debug
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2592690533154406537, guid: 439ba83f7bfb64cc3a26229ca05aed3f, type: 3}
       propertyPath: maxNeighborDistance
@@ -20896,6 +20976,65 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 439ba83f7bfb64cc3a26229ca05aed3f, type: 3}
+--- !u!1 &676587431
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 676587432}
+  - component: {fileID: 676587433}
+  m_Layer: 0
+  m_Name: FireVisualController
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &676587432
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 676587431}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1657961513}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &676587433
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 676587431}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f742c92c23cdb4c51bb7d099258cdb4b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  flickerIntensity: {x: 1.95, y: 2.05}
+  flickerMultiplier: 0.25
+  timeToFlicker: 0.025
+  flickerDelta: 0
+  lights:
+  - {fileID: 1975023121}
+  - {fileID: 778717856}
+  lightPositions: []
+  lightIntensities: []
+  maxFireDistance: 8
+  allSmoke:
+  - {fileID: 1556168500}
+  - {fileID: 1778919060}
+  lifetimeSettings: {x: 6, y: 7.5}
+  debug: 0
 --- !u!1 &693765907
 GameObject:
   m_ObjectHideFlags: 0
@@ -22093,6 +22232,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2592690533154406537, guid: 439ba83f7bfb64cc3a26229ca05aed3f, type: 3}
+      propertyPath: debug
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2592690533154406537, guid: 439ba83f7bfb64cc3a26229ca05aed3f, type: 3}
+      propertyPath: maxNeighborDistance
+      value: 3.5
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 439ba83f7bfb64cc3a26229ca05aed3f, type: 3}
 --- !u!4 &736005888 stripped
@@ -22978,7 +23125,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 778717854}
   m_LocalRotation: {x: -0, y: 1, z: -0, w: 0}
-  m_LocalPosition: {x: -4.27, y: 10.27, z: 4.48}
+  m_LocalPosition: {x: -3.72, y: 8.04, z: 3.08}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -24292,7 +24439,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2592690533154406537, guid: 439ba83f7bfb64cc3a26229ca05aed3f, type: 3}
       propertyPath: maxNeighborDistance
-      value: 4.5
+      value: 3.5
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 439ba83f7bfb64cc3a26229ca05aed3f, type: 3}
@@ -24991,6 +25138,14 @@ PrefabInstance:
     - target: {fileID: 2211755474782925893, guid: 439ba83f7bfb64cc3a26229ca05aed3f, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2592690533154406537, guid: 439ba83f7bfb64cc3a26229ca05aed3f, type: 3}
+      propertyPath: debug
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2592690533154406537, guid: 439ba83f7bfb64cc3a26229ca05aed3f, type: 3}
+      propertyPath: maxNeighborDistance
+      value: 3.5
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 439ba83f7bfb64cc3a26229ca05aed3f, type: 3}
@@ -25948,7 +26103,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 902701978}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: -2.04, z: -0.57}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -27758,7 +27913,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 963194225}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: -0.17}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -33294,8 +33449,12 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2592690533154406537, guid: 439ba83f7bfb64cc3a26229ca05aed3f, type: 3}
+      propertyPath: debug
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2592690533154406537, guid: 439ba83f7bfb64cc3a26229ca05aed3f, type: 3}
       propertyPath: maxNeighborDistance
-      value: 4.5
+      value: 3.5
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 439ba83f7bfb64cc3a26229ca05aed3f, type: 3}
@@ -34963,6 +35122,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2592690533154406537, guid: 439ba83f7bfb64cc3a26229ca05aed3f, type: 3}
+      propertyPath: debug
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2592690533154406537, guid: 439ba83f7bfb64cc3a26229ca05aed3f, type: 3}
+      propertyPath: maxNeighborDistance
+      value: 3.5
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 439ba83f7bfb64cc3a26229ca05aed3f, type: 3}
 --- !u!4 &1190964737 stripped
@@ -35557,8 +35724,12 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2592690533154406537, guid: 439ba83f7bfb64cc3a26229ca05aed3f, type: 3}
+      propertyPath: debug
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2592690533154406537, guid: 439ba83f7bfb64cc3a26229ca05aed3f, type: 3}
       propertyPath: maxNeighborDistance
-      value: 4.5
+      value: 3.5
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 439ba83f7bfb64cc3a26229ca05aed3f, type: 3}
@@ -35702,7 +35873,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2592690533154406537, guid: 439ba83f7bfb64cc3a26229ca05aed3f, type: 3}
       propertyPath: maxNeighborDistance
-      value: 4.5
+      value: 3.5
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 439ba83f7bfb64cc3a26229ca05aed3f, type: 3}
@@ -42726,6 +42897,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2592690533154406537, guid: 439ba83f7bfb64cc3a26229ca05aed3f, type: 3}
+      propertyPath: debug
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2592690533154406537, guid: 439ba83f7bfb64cc3a26229ca05aed3f, type: 3}
+      propertyPath: maxNeighborDistance
+      value: 3.5
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 439ba83f7bfb64cc3a26229ca05aed3f, type: 3}
 --- !u!4 &1472468208 stripped
@@ -45012,6 +45191,11 @@ PrefabInstance:
 Transform:
   m_CorrespondingSourceObject: {fileID: 7726961161867395037, guid: 83edc114451742e47bdd123e6984731e, type: 3}
   m_PrefabInstance: {fileID: 1556062477}
+  m_PrefabAsset: {fileID: 0}
+--- !u!198 &1556168500 stripped
+ParticleSystem:
+  m_CorrespondingSourceObject: {fileID: 8741123179569702062, guid: c986380d03ad84e9786eefa3b1cc242d, type: 3}
+  m_PrefabInstance: {fileID: 337358837}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1557169471
 PrefabInstance:
@@ -47696,6 +47880,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1920635017}
+  - {fileID: 676587432}
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -51447,6 +51632,11 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 5232440746012196054, guid: c986380d03ad84e9786eefa3b1cc242d, type: 3}
   m_PrefabInstance: {fileID: 1778919057}
   m_PrefabAsset: {fileID: 0}
+--- !u!198 &1778919060 stripped
+ParticleSystem:
+  m_CorrespondingSourceObject: {fileID: 8741123179569702062, guid: c986380d03ad84e9786eefa3b1cc242d, type: 3}
+  m_PrefabInstance: {fileID: 1778919057}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1792703395
 GameObject:
   m_ObjectHideFlags: 0
@@ -53127,6 +53317,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2592690533154406537, guid: 439ba83f7bfb64cc3a26229ca05aed3f, type: 3}
+      propertyPath: debug
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2592690533154406537, guid: 439ba83f7bfb64cc3a26229ca05aed3f, type: 3}
+      propertyPath: maxNeighborDistance
+      value: 3.5
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 439ba83f7bfb64cc3a26229ca05aed3f, type: 3}
 --- !u!4 &1846572118 stripped
@@ -53188,6 +53386,14 @@ PrefabInstance:
     - target: {fileID: 2211755474782925893, guid: 439ba83f7bfb64cc3a26229ca05aed3f, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2592690533154406537, guid: 439ba83f7bfb64cc3a26229ca05aed3f, type: 3}
+      propertyPath: debug
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2592690533154406537, guid: 439ba83f7bfb64cc3a26229ca05aed3f, type: 3}
+      propertyPath: maxNeighborDistance
+      value: 3.5
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 439ba83f7bfb64cc3a26229ca05aed3f, type: 3}
@@ -54627,7 +54833,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2592690533154406537, guid: 439ba83f7bfb64cc3a26229ca05aed3f, type: 3}
       propertyPath: maxNeighborDistance
-      value: 4.5
+      value: 3.5
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 439ba83f7bfb64cc3a26229ca05aed3f, type: 3}
@@ -56895,7 +57101,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   onRotation: {x: -45, y: 0, z: 0}
-  offRotation: {x: -135, y: 0, z: 0}
+  offRotation: {x: -112, y: 0, z: 0}
   rotationSpeed: 220
 --- !u!1001 &1919923316
 PrefabInstance:
@@ -58811,6 +59017,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2592690533154406537, guid: 439ba83f7bfb64cc3a26229ca05aed3f, type: 3}
+      propertyPath: debug
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2592690533154406537, guid: 439ba83f7bfb64cc3a26229ca05aed3f, type: 3}
+      propertyPath: maxNeighborDistance
+      value: 3.5
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 439ba83f7bfb64cc3a26229ca05aed3f, type: 3}
 --- !u!4 &1959007256 stripped
@@ -59343,7 +59557,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1975023119}
   m_LocalRotation: {x: -0, y: 1, z: -0, w: 0}
-  m_LocalPosition: {x: 7.38, y: 9.29, z: 4.48}
+  m_LocalPosition: {x: 6.41, y: 11.81, z: 4.37}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -60127,7 +60341,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2592690533154406537, guid: 439ba83f7bfb64cc3a26229ca05aed3f, type: 3}
       propertyPath: maxNeighborDistance
-      value: 4.5
+      value: 3.5
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 439ba83f7bfb64cc3a26229ca05aed3f, type: 3}
@@ -61164,6 +61378,14 @@ PrefabInstance:
     - target: {fileID: 2211755474782925893, guid: 439ba83f7bfb64cc3a26229ca05aed3f, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2592690533154406537, guid: 439ba83f7bfb64cc3a26229ca05aed3f, type: 3}
+      propertyPath: debug
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2592690533154406537, guid: 439ba83f7bfb64cc3a26229ca05aed3f, type: 3}
+      propertyPath: maxNeighborDistance
+      value: 3.5
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 439ba83f7bfb64cc3a26229ca05aed3f, type: 3}
@@ -62256,6 +62478,14 @@ PrefabInstance:
     - target: {fileID: 2211755474782925893, guid: 439ba83f7bfb64cc3a26229ca05aed3f, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2592690533154406537, guid: 439ba83f7bfb64cc3a26229ca05aed3f, type: 3}
+      propertyPath: debug
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2592690533154406537, guid: 439ba83f7bfb64cc3a26229ca05aed3f, type: 3}
+      propertyPath: maxNeighborDistance
+      value: 3.5
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 439ba83f7bfb64cc3a26229ca05aed3f, type: 3}

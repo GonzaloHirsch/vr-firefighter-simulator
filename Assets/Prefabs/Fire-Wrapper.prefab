@@ -67,13 +67,15 @@ MonoBehaviour:
   onNeighbors: 0
   timeToOnDelta: 0
   shouldTurnOn: 0
+  downMultiplier: 2
+  downNeighborDist: 0.5
   maxHitInterval: 2
   currentHitInterval: 0
   totalHitTime: 5
   currentHitTime: 0
   neighbors: []
   onNeighborsThreshold: 2
-  maxNeighborDistance: 4
+  minNeighborDownDistance: 3
   mainEffectGo: {fileID: 1849464941111748095}
 --- !u!1001 &4342462706592963048
 PrefabInstance:

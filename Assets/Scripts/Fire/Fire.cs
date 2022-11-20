@@ -12,13 +12,19 @@ public class Fire : MonoBehaviour, IWaterInteractable
     public float timeToOnMin = 3f;
     public float timeToOnMax = 3f;
     public float timeToOn;
-
-    [SerializeField]
-    private int onNeighbors = 0;
     [SerializeField]
     private float timeToOnDelta = 0f;
     [SerializeField]
     private bool shouldTurnOn = false;
+
+    [Header("Neighbors")]
+    [SerializeField]
+    private int onNeighbors = 0;
+    private bool hasDownNeighbor = false;
+    public float maxNeighborDistance = 4f;
+    [Range(1f, 3f)]
+    public float downMultiplier = 1f;
+    public float downNeighborDist = 0.5f;
 
     [Header("Fire Turning Off")]
     private bool isTurningOff = false;
@@ -32,7 +38,7 @@ public class Fire : MonoBehaviour, IWaterInteractable
     // We can leave it like this, in case the programmer decides to manually input some of them
     public List<Fire> neighbors;
     public int onNeighborsThreshold = 2;
-    public float maxNeighborDistance = 3f;
+    public float minNeighborDownDistance = 3f;
 
     [Header("Particle System")]
     public GameObject mainEffectGo;
@@ -49,9 +55,9 @@ public class Fire : MonoBehaviour, IWaterInteractable
     void Update()
     {
         // Handle turning on
-        if (this.shouldTurnOn)
+        if (this.shouldTurnOn && !this.isOn)
         {
-            this.timeToOnDelta += Time.deltaTime;
+            this.timeToOnDelta += (Time.deltaTime * (this.hasDownNeighbor ? this.downMultiplier : 1f));
             // If over the limit with the neighbors
             if (this.timeToOnDelta >= this.timeToOn)
             {
@@ -64,7 +70,7 @@ public class Fire : MonoBehaviour, IWaterInteractable
             }
         }
         // Handle turning off
-        if (this.isTurningOff) {
+        if (this.isTurningOff && this.isOn) {
             // Add to the timers
             this.currentHitTime += Time.deltaTime;
             this.currentHitInterval += Time.deltaTime;
@@ -115,11 +121,6 @@ public class Fire : MonoBehaviour, IWaterInteractable
         }
     }
 
-    public void TurnOff()
-    {
-        this.UpdateFireState(true);
-    }
-
     public void WaterHit(Vector3 normal)
     {
         // Reset timer when hit
@@ -127,6 +128,7 @@ public class Fire : MonoBehaviour, IWaterInteractable
         this.currentHitInterval = 0f;
     }
 
+    // Method to externally turn on the fire, without notifying the neighbors
     public void SetIsOn(bool _isOn)
     {
         this.isOn = _isOn;
@@ -170,6 +172,11 @@ public class Fire : MonoBehaviour, IWaterInteractable
             {
                 this.shouldTurnOn = true;
                 this.timeToOnDelta = 0f;
+                // Find if any of the neihbors is down
+                this.hasDownNeighbor = false;
+                foreach (Fire neighbor in this.neighbors) {
+                    this.hasDownNeighbor = this.hasDownNeighbor || (this.transform.position.y - neighbor.transform.position.y > this.minNeighborDownDistance);
+                }
             }
         }
         else

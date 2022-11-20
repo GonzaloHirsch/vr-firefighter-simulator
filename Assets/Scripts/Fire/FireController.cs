@@ -27,6 +27,8 @@ public class FireController : Framework.MonoBehaviorSingleton<FireController>
         for (int i = 0; i < this.fires.Length; i++) {
             this.fires[i].FindNeighbors(this.fires, i);
         }
+        // Initialize visuals
+        FireVisualsController.Instance.InitializeVisuals();
     }
 
     public void FireChanged(int delta) {
@@ -44,5 +46,9 @@ public class FireController : Framework.MonoBehaviorSingleton<FireController>
         {
             fd.NotifyFireChange(this.totalLitFires);
         }
+    }
+
+    public int GetTotalFires() {
+        return this.fires.Length;
     }
 }

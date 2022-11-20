@@ -17,7 +17,8 @@ public class MouseFollow : MonoBehaviour
     void Update()
     {
         // Work only in the editor in play mode as a debug
-        if (EditorApplication.isPlaying)
+        // Player must hold right click to enable
+        if (EditorApplication.isPlaying && Input.GetMouseButton(1))
         {
             this.yaw += this.sensitivity * Input.GetAxis("Mouse X");
             this.pitch -= this.sensitivity * Input.GetAxis("Mouse Y");
