@@ -18,7 +18,6 @@ public class VRReticle : MonoBehaviour
             this.reticleInstance = GameObject.Instantiate(this.reticlePrefab, Vector3.zero, Quaternion.identity, this.mainCamera.transform);
             // Set the distance 
             this.reticleInstance.transform.position = this.mainCamera.transform.position + (this.mainCamera.transform.forward.normalized * this.distanceFromCamera);
-            Debug.Log(this.reticleInstance.transform.position);
         }
     }
 }
