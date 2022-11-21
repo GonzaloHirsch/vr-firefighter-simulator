@@ -1,3 +1,4 @@
+using System.Collections;
 using System.Linq;
 using UnityEngine;
 
@@ -10,6 +11,7 @@ public class FireController : Framework.MonoBehaviorSingleton<FireController>
     private Fire[] fires;
     [Range(0,1)]
     public float initialFireProbability;
+    public AudienceController audienceController;
 
     void Start() 
     {
@@ -36,8 +38,15 @@ public class FireController : Framework.MonoBehaviorSingleton<FireController>
         this.NotifyAllFireDependants();
         // GAME OVER SITUATION
         if (this.totalLitFires == 0) {
-            Debug.Log("GAME OVER");
+            StartCoroutine(StartVictorySequence());
         }
+    }
+
+    private IEnumerator StartVictorySequence()
+    {
+        audienceController.Celebrate();
+        yield return new WaitForSeconds(10f);
+        SceneController.GoToMenuScene();
     }
 
     void NotifyAllFireDependants()
