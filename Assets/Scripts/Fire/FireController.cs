@@ -38,15 +38,8 @@ public class FireController : Framework.MonoBehaviorSingleton<FireController>
         this.NotifyAllFireDependants();
         // GAME OVER SITUATION
         if (this.totalLitFires == 0) {
-            StartCoroutine(StartVictorySequence());
+            audienceController.StartVictory();
         }
-    }
-
-    private IEnumerator StartVictorySequence()
-    {
-        audienceController.Celebrate();
-        yield return new WaitForSeconds(10f);
-        SceneController.GoToMenuScene();
     }
 
     void NotifyAllFireDependants()
