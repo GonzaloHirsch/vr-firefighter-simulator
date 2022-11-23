@@ -61,8 +61,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   debug: 0
   isOn: 0
-  timeToOnMin: 60
-  timeToOnMax: 90
+  timeToOnMin: 40
+  timeToOnMax: 60
   timeToOn: 3
   timeToOnDelta: 0
   shouldTurnOn: 0

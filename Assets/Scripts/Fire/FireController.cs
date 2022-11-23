@@ -12,6 +12,7 @@ public class FireController : Framework.MonoBehaviorSingleton<FireController>
     [Range(0,1)]
     public float initialFireProbability;
     public AudienceController audienceController;
+    public float maximumTurnOffLimit;
 
     void Start() 
     {
@@ -31,6 +32,11 @@ public class FireController : Framework.MonoBehaviorSingleton<FireController>
         }
         // Initialize visuals
         FireVisualsController.Instance.InitializeVisuals();
+        // Set the start time
+        State.Instance.Reset();
+        State.Instance.approvalLimit = this.maximumTurnOffLimit;
+        State.Instance.hasPlayed = true;
+        State.Instance.startTime = Time.time;
     }
 
     public void FireChanged(int delta) {
@@ -38,6 +44,7 @@ public class FireController : Framework.MonoBehaviorSingleton<FireController>
         this.NotifyAllFireDependants();
         // GAME OVER SITUATION
         if (this.totalLitFires == 0) {
+            State.Instance.endTime = Time.time;
             audienceController.StartVictory();
         }
     }
