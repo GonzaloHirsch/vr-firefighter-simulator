@@ -1,5 +1,7 @@
 using UnityEngine;
+#if UNITY_EDITOR
 using UnityEditor;
+#endif
 
 public class MouseFollow : MonoBehaviour
 {
@@ -18,11 +20,18 @@ public class MouseFollow : MonoBehaviour
     {
         // Work only in the editor in play mode as a debug
         // Player must hold right click to enable
+#if UNITY_EDITOR
         if (EditorApplication.isPlaying && Input.GetMouseButton(1))
         {
-            this.yaw += this.sensitivity * Input.GetAxis("Mouse X");
-            this.pitch -= this.sensitivity * Input.GetAxis("Mouse Y");
-            this.cam.transform.eulerAngles = new Vector3(this.pitch, this.yaw, 0f);
+            this.HandleMouseInput();
         }
+#endif
+    }
+
+    void HandleMouseInput()
+    {
+        this.yaw += this.sensitivity * Input.GetAxis("Mouse X");
+        this.pitch -= this.sensitivity * Input.GetAxis("Mouse Y");
+        this.cam.transform.eulerAngles = new Vector3(this.pitch, this.yaw, 0f);
     }
 }

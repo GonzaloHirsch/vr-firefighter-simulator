@@ -10,7 +10,7 @@ public class ActionMapper
 
     // Mouse Trigger
     private static bool GetMouseTrigger() {
-        return Input.GetMouseButtonUp(0); // Left-click
+        return Input.GetMouseButtonDown(0); // Left-click
     }
 
     // Cardboard Trigger
