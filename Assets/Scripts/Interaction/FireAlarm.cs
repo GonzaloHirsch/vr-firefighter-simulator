@@ -2,7 +2,6 @@ using UnityEngine;
 using System.Collections;
 
 public class FireAlarm : MonoBehaviour {
-    public GameObject instructionText;
     public FadeController fadeController;
     private AudioSource audioSource;
 
@@ -29,10 +28,6 @@ public class FireAlarm : MonoBehaviour {
     }
 
     public void OnPointerEnter() {
-        this.instructionText.SetActive(true);
-    }
-
-    public void OnPointerExit() {
-        this.instructionText.SetActive(false);
+        NarratorController.Instance.NarrateAlarm();
     }
 }
