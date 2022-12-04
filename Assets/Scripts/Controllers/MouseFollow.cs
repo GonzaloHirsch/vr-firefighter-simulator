@@ -23,6 +23,7 @@ public class MouseFollow : MonoBehaviour
 #if UNITY_EDITOR
         if (EditorApplication.isPlaying && Input.GetMouseButton(1))
         {
+            Cursor.lockState = CursorLockMode.Locked;
             this.HandleMouseInput();
         }
 #endif

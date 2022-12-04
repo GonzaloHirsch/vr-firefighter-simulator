@@ -20,6 +20,7 @@ public class NarratorController : Framework.MonoBehaviorSingleton<NarratorContro
     }
 
     private void PlayClip(AudioClip clip) {
-        if (!this.audioSource.isPlaying) this.audioSource.PlayOneShot(clip);
+        if (!this.audioSource.isPlaying) this.audioSource.Stop();
+        this.audioSource.PlayOneShot(clip);
     }
 }
