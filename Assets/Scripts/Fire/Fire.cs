@@ -43,12 +43,10 @@ public class Fire : MonoBehaviour, IWaterInteractable
     [Header("Particle System")]
     public GameObject mainEffectGo;
     private ParticleSystem pSystem;
-    private AudioSource aSource;
 
     void Awake()
     {
         this.pSystem = this.mainEffectGo.GetComponent<ParticleSystem>();
-        this.aSource = this.mainEffectGo.GetComponentInChildren<AudioSource>();
         this.timeToOn = Random.Range(this.timeToOnMin, this.timeToOnMax);
     }
 
@@ -107,12 +105,10 @@ public class Fire : MonoBehaviour, IWaterInteractable
         if (this.isOn)
         {
             this.pSystem.Play();
-            this.aSource.Play();
         }
         else
         {
             this.pSystem.Stop();
-            this.aSource.Stop();
         }
         if (notify)
         {

@@ -1,4 +1,5 @@
 using System.Collections.Generic;
+using System.Collections;
 using UnityEngine;
 
 public class FireVisualsController : Framework.MonoBehaviorSingleton<FireVisualsController>, IFireDependant
@@ -8,6 +9,13 @@ public class FireVisualsController : Framework.MonoBehaviorSingleton<FireVisuals
     public float flickerMultiplier = 1f;
     public float timeToFlicker = 0.5f;
     public float flickerDelta = 0f;
+
+    [Header("Sounds")]
+    public AudioSource[] audioSources;
+    public AudioClip[] breakingSounds;
+    public float timeToBreak;
+    public float breakDelta = 0f;
+    public Vector2 delayLimits;
 
     [Header("Lights")]
     public Light[] lights;
@@ -36,11 +44,20 @@ public class FireVisualsController : Framework.MonoBehaviorSingleton<FireVisuals
 
     void Update()
     {
-        if (this.flickerDelta >= this.timeToFlicker) {
+        // Light flickering
+        if (this.flickerDelta >= this.timeToFlicker)
+        {
             this.flickerDelta = 0f;
             this.FlickerLights();
         }
         this.flickerDelta += Time.deltaTime;
+        // Breaking sounds
+        if (this.breakDelta >= this.timeToBreak)
+        {
+            this.breakDelta = 0f;
+            this.BreakSounds();
+        }
+        this.breakDelta += Time.deltaTime;
     }
 
     public void NotifyFireChange(int fireCount)
@@ -58,8 +75,30 @@ public class FireVisualsController : Framework.MonoBehaviorSingleton<FireVisuals
         foreach (ParticleSystem smoke in this.allSmoke)
         {
             var main = smoke.main;
-            main.startLifetime = this.lifetimeSettings.x + Mathf.Clamp(fireCount / (float) this.totalFires, 0f, 1f) * (this.lifetimeSettings.y - this.lifetimeSettings.x);
+            main.startLifetime = this.lifetimeSettings.x + Mathf.Clamp(fireCount / (float)this.totalFires, 0f, 1f) * (this.lifetimeSettings.y - this.lifetimeSettings.x);
         }
+    }
+
+    /* ------------------------------------------------------------------------------ */
+    /* SOUND HANDLING */
+    /* ------------------------------------------------------------------------------ */
+
+    private void BreakSounds()
+    {
+        for (int i = 0; i < this.lights.Length; i++)
+        {
+            // If light is active, play the sound with a random delay
+            if (this.lights[i].gameObject.activeInHierarchy)
+            {
+                StartCoroutine(this.PlaySound(this.audioSources[i], this.breakingSounds[Random.Range(0, this.breakingSounds.Length)], Random.Range(this.delayLimits.x, this.delayLimits.y)));
+            }
+        }
+    }
+
+    IEnumerator PlaySound(AudioSource audioSource, AudioClip clip, float delay)
+    {
+        yield return new WaitForSeconds(delay);
+        audioSource.PlayOneShot(clip);
     }
 
     /* ------------------------------------------------------------------------------ */
@@ -124,10 +163,12 @@ public class FireVisualsController : Framework.MonoBehaviorSingleton<FireVisuals
         this.totalFires = FireController.Instance.GetTotalFires();
     }
 
-    public void FlickerLights() {
+    public void FlickerLights()
+    {
         Vector3 delta;
         float newIntensity;
-        for (int i = 0; i < this.lights.Length; i++) {
+        for (int i = 0; i < this.lights.Length; i++)
+        {
             delta = new Vector3(Random.Range(0f, 1f) * this.flickerMultiplier, Random.Range(0f, 1f) * this.flickerMultiplier, 0f);
             newIntensity = Random.Range(this.flickerIntensity[0], this.flickerIntensity[1]);
             this.lights[i].transform.position = this.lightPositions[i] + delta;
